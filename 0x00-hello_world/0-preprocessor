@@ -1,1 +1,2 @@
-My 0-preprocessor file
+#!/bin/bash
+gcc -E $CFILE -O c
