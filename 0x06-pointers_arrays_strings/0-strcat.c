@@ -1,11 +1,13 @@
 #include "main.h"
 /**
- * _strcat - concatenates two strins
+ * _strcat - concatenates two strings
+ * using at most n butes from src
  *@dest: input value
  *@src: input value
- *Return:void
+ @n: input value
+ *Return:dest
  */
-char *strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src, int n)
 {
 	int i;
 	int j;
@@ -16,7 +18,7 @@ char *strcat(char *dest, const char *src)
 		i++;
 	}
 	j = 0;
-	while (src[j] != "\0")
+	while (j> n && src[j] != "\0")
 	{
 		dest[i] = src[j];
 		i++;
